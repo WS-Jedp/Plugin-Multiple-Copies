@@ -1,0 +1,20 @@
+{   
+    "manifest_version": 3,
+    "name": "Multi Copy",
+    "version": "0.5",
+  
+    "description": "Allows you to copy multiple texts of a website and paste them in another document.",
+  
+    "icons": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["index.js"]
+      }
+    ]
+  
+  }
